@@ -1,0 +1,102 @@
+$bodyColor:#F8F0E5;
+$headingFontSize:30pt;
+$subHeadingFontSize:$headingFontSize/1.618;
+$textSize:$subHeadingFontSize/1.618;
+$borderRadius:10px;
+$fontColor:#102C57;
+$padding:5px;
+$buttonColor:#DAC0A3;
+$elemntsMargin:10px;
+$shortcutsBackgroundColor:#EADBC8;
+.header{
+    background-color: $fontColor;
+    width: 100%;
+    height: 5%;
+    font-size: $headingFontSize;
+    border-radius: $borderRadius;
+    -webkit-border-radius: $borderRadius;
+    -moz-border-radius: $borderRadius;
+    -ms-border-radius: $borderRadius;
+    -o-border-radius: $borderRadius;
+    color: $bodyColor;
+    padding: $padding;
+    margin:$elemntsMargin ;
+    display:flex;
+    justify-content: space-between;
+    place-self: center;
+}
+.header_right{
+   button{
+    margin: 5px;
+    background-color: $buttonColor;
+    color: $fontColor;
+   }
+}
+.shortcutsDiv{
+    height: 200px;
+    width: 200px;
+    border-radius: $borderRadius;
+    -webkit-border-radius: $borderRadius;
+    -moz-border-radius: $borderRadius;
+    -ms-border-radius: $borderRadius;
+    -o-border-radius: $borderRadius;
+    background-color: $bodyColor;
+}
+.subHeading{
+    font-size: $subHeadingFontSize;
+    margin-left: 1.5em;
+    color:$fontColor
+}
+.recentForms{
+    overflow-y: scroll;
+    padding: calc(5px + 2em);
+    display: inherit;
+    text-align: left;
+    .recentforms{
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+    }
+}
+.shortcuts{
+    overflow-y: scroll;
+    
+    padding: calc($padding + 2em);
+    display: inherit;
+    text-align: left;
+    align-items: left;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -40px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   
+   
+    width: 100%;
+    ul{
+        margin-top: 1.5em;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline-flex;
+        list-style-type: none;
+        justify-content: space-between;
+        li{
+           margin-left: 10px;
+           margin-right: 10px;
+        }
+        li:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        li:nth-child(1){
+            height: 200px;
+            width: 200px;
+            background-color: $fontColor;
+            display: flex;    
+            align-items: center;
+           }
+    }
+   
+}
+.svgaddicon{
+    text-align: center;
+    margin: 0 auto;
+    height: 70px;
+    width: 70px;
+}

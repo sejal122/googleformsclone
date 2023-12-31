@@ -1,0 +1,113 @@
+ <Accordion defaultIndex={[0]} allowMultiple>
+          <AccordionItem>
+            <h2>
+              <AccordionButton>
+                <Box as="span" flex="1" textAlign="left">
+                  <input
+                    required={ques.required}
+                    className={"questiontextInput"}
+                    value={ques.questiontext}
+                    placeholder={ques.questiontext}
+                  ></input>
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              <Stack h="fit-content">
+                <div key={i}>
+                  {" "}
+                  {ques.options.map((option, j) => {
+                    return (
+                      <div className="answerInput">
+                        {ques.questiontype === "Radio" ||
+                        ques.questiontype === "Checkbox" ? (
+                          <div className="questions" key={j}>
+                            <input
+                              type={ques.questiontype}
+                              id={option.optiontext}
+                              name="contact"
+                            />
+                            <input
+                              type="text"
+                              value={option.optiontext}
+                              onChange={(e) =>
+                                changeoptionValue(e.target.value, i, j)
+                              }
+                              htmlFor="contactChoice1"
+                            ></input>
+                          </div>
+                        ) : (
+                          <div>
+                            <input
+                              type={ques.questiontype}
+                              id={option.optiontext}
+                              name="contact"
+                            />
+                          </div>
+                        )}
+
+                        <button>
+                          <Icon
+                            onClick={() => removeOption(i, j)}
+                            style={{ color: "grey" }}
+                            as={SmallCloseIcon}
+                          />
+                        </button>
+                      </div>
+                    );
+                  })}
+                  {ques.options.length < 5 ? (
+                    <div>
+                      <Button
+                        className="addoptionBtn"
+                        onClick={() => addOption(i)}
+                      >
+                        add option
+                      </Button>{" "}
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </div>
+                <Divider orientation="vertical"></Divider>
+                <Text>
+                  <HStack spacing={4}>
+                    <Tag
+                      type="button"
+                      onClick={() => copyQuestion(i)}
+                      size="md"
+                      key="md"
+                    >
+                      <Icon as={CopyIcon} />
+                    </Tag>
+                    <Tag onClick={() => deleteQuestion(i)} size="md" key={i}>
+                      <Icon as={DeleteIcon} />
+                    </Tag>
+                    <FormControl display="flex" alignItems="center">
+                      <FormLabel htmlFor="required" mb="0">
+                        Required
+                      </FormLabel>
+                      <Switch
+                        onChange={() => requiredQuestion(i)}
+                        colorScheme="blue"
+                        id="requiredInput"
+                      />
+                    </FormControl>
+                    <Select
+                      onChange={(e) => addQuestionType(e.target.value, i)}
+                      size="xs"
+                      placeholder="Select input type"
+                    >
+                      <option value="text">Paragraph</option>
+                      <option value="Radio">Radio</option>
+                      <option value="Checkbox">Checkbox</option>
+                    </Select>
+                  </HStack>
+                </Text>
+              </Stack>
+
+              <div></div>
+            </AccordionPanel>
+          </AccordionItem>
+        </Accordion>

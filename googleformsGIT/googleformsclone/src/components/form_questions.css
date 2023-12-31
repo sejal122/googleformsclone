@@ -1,0 +1,181 @@
+.header {
+  background-color: #102C57;
+  width: 100%;
+  height: 5%;
+  font-size: 30pt;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: #F8F0E5;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  place-self: center;
+}
+
+.header_right button {
+  margin: 5px;
+  background-color: #DAC0A3;
+  color: #102C57;
+}
+
+.shortcutsDiv {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #F8F0E5;
+}
+
+.subHeading {
+  font-size: 18.5414091471pt;
+  margin-left: 1.5em;
+  color: #102C57;
+}
+
+.recentForms {
+  overflow-y: scroll;
+  padding: calc(5px + 2em);
+  display: inherit;
+  text-align: left;
+}
+.recentForms .recentforms {
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+}
+
+.shortcuts {
+  overflow-y: scroll;
+  padding: calc(5px + 2em);
+  display: inherit;
+  text-align: left;
+  align-items: left;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 30px -40px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 100%;
+}
+.shortcuts ul {
+  margin-top: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.shortcuts ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.shortcuts ul li:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.shortcuts ul li:nth-child(1) {
+  height: 200px;
+  width: 200px;
+  background-color: #102C57;
+  display: flex;
+  align-items: center;
+}
+
+.svgaddicon {
+  text-align: center;
+  margin: 0 auto;
+  height: 70px;
+  width: 70px;
+}
+
+.formquestions {
+  width: 60%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  margin: 0 auto;
+}
+.formquestions .addoptionBtn {
+  background-color: transparent;
+  color: #102C57;
+}
+.formquestions .addoptionBtn:hover {
+  background-color: transparent;
+}
+.formquestions .sectionTitle {
+  border-top: 1px solid #102C57;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.formquestions .sectionTitle .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formquestions .sectionTitle .title .section {
+  margin: 0 auto;
+}
+.formquestions .sectionTitle .title input {
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+}
+.formquestions .sectionTitle .title input:focus {
+  outline: none !important;
+}
+.formquestions .sectionTitle .title .titleInput {
+  margin: 5px;
+  font-size: 2rem;
+}
+.formquestions .sectionTitle .title .formdescriptionInput {
+  margin: 5px;
+}
+.formquestions input:focus {
+  outline: none !important;
+}
+.formquestions .questiontextInput {
+  width: 100% !important;
+}
+.formquestions input {
+  border: none;
+  width: auto;
+  padding: 5px;
+}
+.formquestions .answerInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.formquestions .answerInput label {
+  margin-left: 10px;
+}
+.formquestions .addquestionDiv {
+  text-align: center;
+  color: #102C57;
+  margin: 5px;
+  padding: 5px;
+  background-color: #EADBC8;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.formquestions .addquestionDiv p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.formquestions .addquestionDiv svg {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}/*# sourceMappingURL=form_questions.css.map */

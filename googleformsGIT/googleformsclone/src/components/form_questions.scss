@@ -1,0 +1,120 @@
+@import './mystyles.scss';
+.formquestions{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+    .answerKey{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: grey;
+    }
+    .addoptionBtn{
+        background-color: transparent;
+        color: $fontColor;
+    }
+    .addoptionBtn:hover{
+        background-color: transparent;
+    }
+    .sectionTitle{
+        border-top: 1px solid $fontColor;
+        border-radius:$borderRadius ;
+        -webkit-border-radius:$borderRadius ;
+        -moz-border-radius:$borderRadius ;
+        -ms-border-radius:$borderRadius ;
+        -o-border-radius:$borderRadius ;
+        .title
+{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .section{
+                margin: 0 auto;
+                
+            }
+            input{
+                border: none;
+                width: fit-content;
+                padding: 5px;
+                margin: 5px;
+            }
+            input:focus{
+                outline:none !important;
+            }
+            .titleInput{
+                margin: 5px;
+                font-size: 2rem;
+            }
+            .formdescriptionInput{
+                margin: 5px;
+            }
+        }
+        }
+       
+        input:focus{
+            outline:none !important;
+        }
+        .questiontextInput{
+            width: 100% !important;
+        }
+        .catSelect{
+            margin: 5px;
+        }
+        input{
+            border: none;
+             width: auto;
+            padding: 5px;
+        }
+        .answerInput{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            label{
+                margin-left: 10px;
+            }
+        }
+        .catQuestionBlock{
+            padding: 10px;
+           justify-content:space-between ;
+            border: 1px solid #d1c9c9;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+          }
+        .addquestionDiv{
+            text-align: center;
+            color: $fontColor;
+            margin: 5px;
+            padding: $padding;
+            background-color: $shortcutsBackgroundColor;
+            border-radius: $borderRadius;
+            -webkit-border-radius: $borderRadius;
+            -moz-border-radius: $borderRadius;
+            -ms-border-radius: $borderRadius;
+            -o-border-radius: $borderRadius;
+            display: flex;
+            justify-content: center;
+            p{
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            svg{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-right: 5px;
+                
+            }
+            input[required]::after{
+                content: '*';
+                color: red;
+            }
+           
+}
+}
